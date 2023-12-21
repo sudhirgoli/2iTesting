@@ -6,7 +6,7 @@ def counting_sum_pairs(new_array, x):
     i=0
    
     while(i<len(new_array)):
-        if (x-(new_array[i])) in  new_array[i+1:]:
+        if (x-(new_array[i])) in  new_array[i+1:] and isinstance(new_array, int)
             new_array.pop(new_array.index(x-new_array[i]))
             i+=1
         else:
